@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+  <title>AIRBNB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/home.css">
+
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">
+      <img src="/img/Airbnb.svg" alt="">
+    </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="home">Home</a></li>
+      <li><a href="room">Room Listing</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+
+      <li><a href="#"data-toggle="modal" data-target="#exampleModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+      <li><a href="#" data-toggle="modal" data-target="#exampleModalSignin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+     <form class="navbar-form navbar-left" action="/">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <div class="md-form mb-5">
+          <input type="text" id="name" class="form-control validate">
+          <label  for="orangeForm-name">Your name</label>
+        </div>
+        <div class="md-form mb-5">
+          <input type="email" id="email" class="form-control validate">
+          <label  for="orangeForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <input type="password" id="pass" class="form-control validate">
+          <label for="pass">Your password</label>
+        </div>      
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of modal -->
+
+<!-- Modal for sign in -->
+<div class="modal fade" id="exampleModalSignin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign in!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <div class="md-form mb-5">
+        </div>
+        <div class="md-form mb-5">
+          <input type="email" id="email" class="form-control validate">
+          <label  for="orangeForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <input type="password" id="pass" class="form-control validate">
+          <label for="pass">Your password</label>
+        </div>      
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- end of modal for sign in -->
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>100% off your next stay!</h1>
+    <p>If you book within the next 10 minutes</p>
+    
+  </div>
+</div>
+
+<article>
+    <h1>Welcome to Airbnb</h1>
+    <p>Start by exploring Stays or Experiences. Apply filters like entire homes, self check-in, or pets allowed to narrow your options. You can also save favourites to a wishlist.</p>
+    <p>Once you’ve found what you’re looking for, learn about your host, read past guest reviews, and get the details on cancellation options—then book in just a few clicks.
+</p>
+  </article>
+</section>
+
+<div id="palm">
+  <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" style="height: 200px;">
+</div>
+
+<form action="" method="post">
+  <div class="elem-group">
+    <label for="name">WHERE</label>
+    <input type="address" id="address"  placeholder="Toronto">
+  </div>
+  <div class="elem-group inlined">
+    <label id="chkin" for="checkin-date">CHECK-IN</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">CHECKOUT</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">GUESTS</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">1 guest</option>
+        <option value="1">2 guest</option>
+        <option value="2">3 guests</option>
+        <option value="3">4 guests</option>
+    </select>
+  </div>
+ <div id="searchButton">
+  <button type="submit">Search</button>
+  </div>
+</form>
+
+
+<p id="spacer"></p>
+
+  <footer>
+  <p>Author: Jason Goldenberg</p>
+  <p><a href="home">Click to go home</a></p>
+</footer>
+
+
+</body>
+</html>

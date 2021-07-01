@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+  <title>AIRBNB</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/room.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="">
+      <img src="/img/Airbnb.svg" alt="">
+    </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="home">Home</a></li>
+      <li class="active"><a href="room">Room Listing</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+
+      <li><a href="#"data-toggle="modal" data-target="#exampleModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+
+      <li><a href="#" data-toggle="modal" data-target="#exampleModalSignin"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+     <form class="navbar-form navbar-left" action="/">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <div class="md-form mb-5">
+          <input type="text" id="name" class="form-control validate">
+          <label  for="orangeForm-name">Your name</label>
+        </div>
+        <div class="md-form mb-5">
+          <input type="email" id="email" class="form-control validate">
+          <label  for="orangeForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <input type="password" id="pass" class="form-control validate">
+          <label for="pass">Your password</label>
+        </div>      
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign up</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of modal -->
+
+<!-- Modal for sign in -->
+<div class="modal fade" id="exampleModalSignin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign in!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <div class="md-form mb-5">
+        </div>
+        <div class="md-form mb-5">
+          <input type="email" id="email" class="form-control validate">
+          <label  for="orangeForm-email">Your email</label>
+        </div>
+
+        <div class="md-form mb-4">
+          <input type="password" id="pass" class="form-control validate">
+          <label for="pass">Your password</label>
+        </div>      
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="allitems">
+<div class="grid-container">
+  <figure>
+    <img src="https://via.placeholder.com/250" />
+    <figcaption>
+      <p>Title</p>
+      <p>$50/night</p>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://via.placeholder.com/250" />
+    <figcaption>
+      <p>Title</p>
+      <p>$50/night</p>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="https://via.placeholder.com/250" />
+    <figcaption>
+      <p>Title</p>
+      <p>$50/night</p>    </figcaption>
+  </figure>
+ <figure>
+    <img src="https://via.placeholder.com/250" />
+    <figcaption>
+       <p>Title</p>
+      <p>$50/night</p>
+    </figcaption>
+  </figure>
+ <figure>
+    <img src="https://via.placeholder.com/250" />
+    <figcaption>
+       <p>Title</p>
+      <p>$50/night</p>
+    </figcaption>
+  </figure>
+ <figure>
+    <img src="https://via.placeholder.com/250" />
+    <figcaption>
+       <p>Title</p>
+      <p>$50/night</p>
+    </figcaption>
+  </figure>
+  
+</div>
+</div>
+
+  <footer>
+  <p>Author: Jason Goldenberg</p>
+  <p><a href="home">Click to go home</a></p>
+</footer>
+
+
+</body>
+</html>
