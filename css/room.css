@@ -1,0 +1,30 @@
+.grid-container {
+    display: grid;
+    grid-gap: 5px 1px;
+    padding: 10px;
+    grid-template-columns: auto auto auto;
+
+  }
+
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+  }
+  #allitems
+  {
+      text-align: center;
+  }
+
+ 
+
+  @media screen and (max-width: 800px) and (min-width: 400px) {
+    .grid-container {
+  grid-template-columns: auto ;
+  display: grid;
+  grid-gap: 5px 1px;
+  padding: 10px;
+    }
+  }
+
+
+
