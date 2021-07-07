@@ -1,0 +1,93 @@
+
+.navbar .navbar-brand {
+    padding-top: 5px;
+  }
+  .navbar .navbar-brand img {
+    height: 40px;
+    width: 150px;
+  }
+
+article
+{
+  padding-left: 50px;;
+  padding-bottom: 50px;
+}
+
+
+
+form {
+    margin: 0 auto; 
+     width:250px;
+
+border-style: solid;
+border-radius: 25px;
+border-width: thin;
+}
+
+label, input {
+  display: table-cell;
+  padding-left: 30px;;
+}
+
+#searchButton{
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;;
+}
+
+#room-selection, #checkout-date, #checkin-date, #address
+{
+  width: 190px;
+}
+
+
+
+#chkin
+{
+  align-items: center;
+}
+.elem-group
+{
+  text-align: center;
+}
+
+.hero-image {
+  background-image: linear-gradient(#FF585D, white);
+  height: 20%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FF585D;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #FF585D;
+  color: white;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+
+}
+
+@media only screen and (max-width: 600px) {
+  #palm {
+    text-align: center;
+  }
+}
+
+
+#spacer
+{
+  padding-bottom: 500px;;
+}
