@@ -1,4 +1,3 @@
-
 function myFunction() {
     const email = document.getElementById("email1").value;
     const pass = document.getElementById("pass1").value;
@@ -43,6 +42,10 @@ function myFunction() {
     else if((email === null || email === "") && (pass === null || pass === ""))
     {
       text = "Email and password requires a value"
+    }
+    else if (email.indexOf('@') > -1)
+    {
+      text = "Improper format of email";
     }
     else if(pass === null || pass === "")
     {
