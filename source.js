@@ -18,7 +18,7 @@ app.use(clientSessions({
 
 
 
-mongoose.connect("mongodb+srv://dbUser:Jasong48@senecaweb.mphip.mongodb.net/AIRBNB?retryWrites=true&w=majority",{useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect("private",{useNewUrlParser: true, useUnifiedTopology: true});
 
 
 var Schema = mongoose.Schema;
